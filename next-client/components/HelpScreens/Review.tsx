@@ -6,6 +6,17 @@ import {
 import { useEffect, useState } from "react";
 
 const Review = ({ submit }: { submit: () => void }) => {
+  const [submitted, setSubmitted] = useState(false);
+  if (submitted)
+    return (
+      <div className="m-auto">
+        <div className="bg-[#7752DF] rounded-md min-w-[300px] p-4 flex flex-col">
+          <h2 className="text-2xl text-white font-extrabold text-center mb-8">
+            Thank You!
+          </h2>
+        </div>
+      </div>
+    );
   return (
     <div className="m-auto">
       <div className="bg-[#7752DF] rounded-md min-w-[300px] p-4 flex flex-col">
@@ -60,7 +71,12 @@ const Review = ({ submit }: { submit: () => void }) => {
           />
         </div>
 
-        <button className="btn btn-secondary">Submit</button>
+        <button
+          className="btn btn-secondary"
+          onClick={() => setSubmitted(true)}
+        >
+          Submit
+        </button>
       </div>
     </div>
   );

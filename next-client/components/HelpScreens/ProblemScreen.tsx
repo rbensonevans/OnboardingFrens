@@ -12,6 +12,15 @@ const ProblemScreen = ({ setProblem }: { setProblem: (problem: string) => void }
           <a onClick={() => setProblem("buying-crypto")}>Buying Crypto</a>
         </li>
         <li>
+          <a onClick={() => setProblem("bridging-tokens")}>Bridging Tokens</a>
+        </li>
+        <li>
+          <a onClick={() => setProblem("lost-transaction")}>Lost Transaction</a>
+        </li>
+        <li>
+          <a onClick={() => setProblem("withdraw-to-fiat")}>Withdrawing to Fiat</a>
+        </li>
+        <li>
           <a onClick={() => setProblem("other")}>Other</a>
         </li>
       </ul>

@@ -117,7 +117,7 @@ export function Header() {
       <div className="w-full bg-[#7752DF] h-12 mb-2 flex">
         <div className="m-auto h-[1.5em]">
           <p className="text-center text-white">
-            Powered by Superfluid, Push Protocol, Wallet Connect, Web3Auth
+            <span className=" italic">Powered by</span> Superfluid, Push Protocol, Wallet Connect, Web3Auth, Coinbase Wallet, ENS
           </p>
         </div>
       </div>
@@ -131,7 +131,7 @@ export function Header() {
               <NavLink href="/">Home</NavLink>
               <NavLink href="/help">Get Help</NavLink>
               <NavLink href="#reports">Reports</NavLink>
-              <NavLink href="#agents">Agents</NavLink>
+              <NavLink href="/agent">Agents</NavLink>
               {/* <NavLink href="#pricing">Pricing</NavLink> */}
             </div>
           </div>
